@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import Header from '../components/Header';
+import AddHabit from '../components/AddHabit';
+import HabitCalendar from '../components/HabitCalendar';
 
 const Home: NextPage = () => {
   return (
@@ -13,6 +15,8 @@ const Home: NextPage = () => {
 
       <main>
         <Header content={'Hello world!'} />
+        <HabitCalendar />
+        <AddHabit />
       </main>
     </div>
   );
